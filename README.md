@@ -1,3 +1,3 @@
 # Mini-Apps
 
-Repo containing multiple react apps used to teach various JavaScript, React, and Redux fundamentals.
+Multiple React/NodeJS apps used to teach various JavaScript and FullStack fundamentals.
