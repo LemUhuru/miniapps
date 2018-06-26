@@ -6,17 +6,6 @@ const loremIpsum = "lorem ipsum lumba limby supim uspim remsum"
 
 class App extends Component {
 
-  /*
-    Break problem into parts -
-    Part 1: Create a clicker, and visual aid to represent incrementing values
-    Part 2: Clicker should restart given some condition, this should be implemented and visual
-    Part 3:
-    on browser click,
-    count clickTimes,
-    use clickTimes to slice loremIpsum array
-    update counter to 0 if it exceeds array.length
-  */
-
   constructor(props) {
     super(props)
 
@@ -51,10 +40,12 @@ class App extends Component {
 
 
   render() {
+    const { loremIpsum, clickTimes } = this.state
+
     return (
       <div id="greeting" className="App">
-        <div>Clicks: {this.state.clickTimes}</div>
-        <div>Lorem Ipsum: {this.state.loremIpsum.join(' ')}</div>
+        <div>Clicks: {clickTimes}</div>
+        <div>Lorem Ipsum: {loremIpsum.join(' ')}</div>
       </div>
     );
   }
