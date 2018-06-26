@@ -15,7 +15,7 @@ class App extends Component {
     }
   }
 
-  handleClick = (target) => {
+  handleClick = () => {
     const splitLorem = loremIpsum.split(' ')
     const { clickTimes } = this.state
 
@@ -43,7 +43,7 @@ class App extends Component {
     const { loremIpsum, clickTimes } = this.state
 
     return (
-      <div id="greeting" className="App">
+      <div className="App">
         <div>Clicks: {clickTimes}</div>
         <div>Lorem Ipsum: {loremIpsum.join(' ')}</div>
       </div>
